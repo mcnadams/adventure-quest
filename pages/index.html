@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adventure Quest</title>
+    <link rel="stylesheet" href="../style/index.css">
 </head>
 <body>
     <header>
@@ -12,6 +13,60 @@
     </header>
 
     <main>
+        <section>
+            <h2>Welcome to Westeros.</h2>
+            <p>Your quest is to overtake the Iron Throne.</p>
+            <p>To do this, you need to travel Beyond the Wall, to Vaes Dothrak, and to Kings Landing.</p>
+            <p>In order to be successful, you need to gather an army of men and dragons.</p>
+            <p>Do you accept this quest?</p>
+            <button id="accept">Yes</button>
+        </section>
+        <br>
+
+        <section id="start" hidden>
+            <form id="user">
+                <fieldset>
+                    <p>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" required>
+                    </p>
+                    <p>
+                        <p>House: </p>
+                        <section id="houses">
+                        <p>
+                            <input type="radio" name="house" id="targeryan" value="Targeryan" required>
+                            <label for="targeryan">Targeryan</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="house" id="stark" value="Stark">
+                            <label for="stark">Stark</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="house" id="lannister" value="Lannister">
+                            <label for="lannister">Lannister</label>
+                        </p>
+                        <p>  
+                            <input type="radio" name="house" id="tyrell" value="Tyrell">
+                            <label for="tyrell">Tyrell</label>
+                        </p>
+                        <p>   
+                            <input type="radio" name="house" id="baratheon" value="Baratheon">
+                            <label for="baratheon">Baratheon</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="house" id="greyjoy" value="Greyjoy">
+                            <label for="greyjoy">Greyjoy</label>
+                        </p>
+                        <p>    
+                            <input type="radio" name="house" id="other" value="other">
+                            <label for="other"><input type="text" placeholder="Your house name" id="your-house"></label>
+                        </p>
+                    </section>
+                    </p>
+                    <button>Begin Quest</button>
+                </fieldset>
+            </form>
+        </section>
         
     </main>
     
